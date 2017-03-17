@@ -16,8 +16,25 @@ An opinionated **_Cookiecutter_** template for creating Pyramid web applications
 * **Bower static resource management**:
 * **Fast pages that are never stale**:* 
 
+## What you get
+
+Here's a screenshot of the home page. You also get much more as you navigate other sections of the web app.
+
+![](https://raw.githubusercontent.com/mikeckennedy/cookiecutter-pyramid-talk-python-starter/master/readme_resources/app-screenshot.png)
 
 ## Usage
+
+To use this template you just run the single command:
+
+```
+cookiecutter https://github.com/mikeckennedy/cookiecutter-pyramid-talk-python-starter
+```
+
+Answer the cookiecutter prompts (notice how smart defaults are suggested anywhere possible):
+
+![](https://raw.githubusercontent.com/mikeckennedy/cookiecutter-pyramid-talk-python-starter/master/readme_resources/template-execution-trimmed.png)
+
+*[Note: Once you have run cookiecutter with the full URL, it is cached locally and can be run with just the template name.]*
 
 ## Compare to Pyramid's standard templates
 

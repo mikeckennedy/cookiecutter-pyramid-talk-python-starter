@@ -2,8 +2,16 @@
   "project_name": "required",
   "project_slug": "{{cookiecutter.project_name.lower().strip().replace(' ', '_').replace(':', '_').replace('-', '_').replace('!', '_')}}",
   "contact_name": "Your company or your name",
-  "contact_email": "you@yourcompany.com",
   "domain_name": "yourcompany.com",
-  "description": ""
+  "contact_email": "contact@{{cookiecutter.domain_name.lower().strip()}}",
+  "description": "",
+  "integrations": "The following integrations are optional [enter to continue]",
+  "mailchimp_api": "",
+  "mailchimp_list_id": "",
+  "outbound_smtp_username": "",
+  "outbound_smtp_password": "",
+  "outbound_smtp_server": "",
+  "outbound_smtp_port": "587",
+  "rollbar_access_token": ""
 }
 

@@ -54,7 +54,7 @@
             </button>
             <a class="navbar-brand" href="/">
                 <img src="/static/img/logo.png"/> <span
-                    class="yellow-foreground">{{cookiecutter.contact_name}}</span> APP</a>
+                    class="yellow-foreground">{{cookiecutter.project_name}}</span> APP</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

@@ -11,8 +11,11 @@ An opinionated **_Cookiecutter_** template for creating Pyramid web applications
 * **Bootstrap and modern design**
 * **Logging with [LogBook](https://logbook.readthedocs.io/en/stable/)**: A logging system for Python that replaces the standard library’s logging module. It was designed with both complex and simple applications in mind and the idea to make logging fun
 * **Runtime error monitoring with [Rollbar](https://rollbar.com)**: Rollbar adds runtime notifications and detailed error tracking and it comes pre-configured in this template
-* **Bower static resource management**
-* **Fast pages that are never stale**
+* **Mailing list integration**: [Mailchimp](https://mailchimp.com/)
+* **Outbound email with templates**:
+* **Bower static resource management**:
+* **Fast pages that are never stale**:* 
+
 
 ## Usage
 

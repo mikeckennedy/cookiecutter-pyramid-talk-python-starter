@@ -1,0 +1,9 @@
+{
+  "project_name": "required",
+  "project_slug": "{{cookiecutter.project_name.lower().strip().replace(' ', '_').replace(':', '_').replace('-', '_').replace('!', '_')}}",
+  "contact_name": "Your company or your name",
+  "contact_email": "you@yourcompany.com",
+  "domain_name": "yourcompany.com",
+  "description": ""
+}
+

@@ -3,7 +3,7 @@
 An opinionated **_Cookiecutter_** template for creating Pyramid web applications starting way further down the development chain. This cookiecutter template will create a new Pyramid web application with the following benefits and more:
 
 * **Factored and organized**: This code was generalized out of a large, professional web application
-* **Master layout template**: Comes pre-configured with a master layout template. Navigation, CSS, JS, etc is factored into a single template file.
+* **Master layout template**: Comes pre-configured with a master layout template. Navigation, CSS, JS, etc is factored into a single template file and is reused across all views
 * **Chameleon language**: This template uses the chameleon template language (the cleanest template language for Python - we did say opinionated right?)
 * **Pyramid Handlers**: Code is factored into handler / controller classes. You have the full power of object-oriented programming immediately available
 * **Secure user management**: The app comes with full user management. Users can register, log in and out, and reset passwords. We use the [passlib](https://passlib.readthedocs.io/en/stable/) package for secure user storage using best practices
@@ -12,9 +12,10 @@ An opinionated **_Cookiecutter_** template for creating Pyramid web applications
 * **Logging with [LogBook](https://logbook.readthedocs.io/en/stable/)**: A logging system for Python that replaces the standard library’s logging module. It was designed with both complex and simple applications in mind and the idea to make logging fun
 * **Runtime error monitoring with [Rollbar](https://rollbar.com)**: Rollbar adds runtime notifications and detailed error tracking and it comes pre-configured in this template
 * **Mailing list integration**: [Mailchimp](https://mailchimp.com/)
-* **Outbound email with templates**:
-* **Bower static resource management**:
-* **Fast pages that are never stale**:* 
+* **Outbound email with templates**: The app has a set of static HTML files with placeholders that are loaded by the outbound email system and populated with user data
+* **Bower static resource management**: Most templates are based on out-of-date files (css templates, js, etc.). This template is uses [bower](https://bower.io/) for it's static files. This means a single CLI command will get you the latest everything.
+* **Fast pages that are never stale**: Every static resource is referenced with our own cache busting system. This means you can use extremely aggressive caching for performance on static files yet they immediately invalidate upon changes
+* **Comes with an entire online course**: This template is built from the final project in [Python for Entrepreneurs](https://training.talkpython.fm/courses/explore_entrepreneurs/python-for-entrepreneurs-build-and-launch-your-online-business), a 20 hour course on building professional web apps in Python and Pyramid from [Talk Python Training](https://training.talkpython.fm/)
 
 ## What you get
 

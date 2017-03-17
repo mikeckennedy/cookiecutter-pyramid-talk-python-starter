@@ -11,7 +11,7 @@ An opinionated **_Cookiecutter_** template for creating Pyramid web applications
 * **Bootstrap and modern design**: As you can see from the screenshot below, the app comes with [bootstrap](https://getbootstrap.com/) and [fontawesome](http://fontawesome.io/). It uses a free, [open-source theme](https://startbootstrap.com/template-overviews/landing-page/) and images used under [CC-Attribution](https://creativecommons.org/licenses/by-sa/2.0/).
 * **Logging with [LogBook](https://logbook.readthedocs.io/en/stable/)**: A logging system for Python that replaces the standard library’s logging module. It was designed with both complex and simple applications in mind and the idea to make logging fun
 * **Runtime error monitoring with [Rollbar](https://rollbar.com)**: Rollbar adds runtime notifications and detailed error tracking and it comes pre-configured in this template
-* **Mailing list integration**: [Mailchimp](https://mailchimp.com/)
+* **Mailing list integration**: Comes with [Mailchimp](https://mailchimp.com/) integration. Just enter your API key and list ID to start collecting and managing users for your mailing list
 * **Outbound email with templates**: The app has a set of static HTML files with placeholders that are loaded by the outbound email system and populated with user data
 * **Bower static resource management**: Most templates are based on out-of-date files (css templates, js, etc.). This template is uses [bower](https://bower.io/) for it's static files. This means a single CLI command will get you the latest everything.
 * **Fast pages that are never stale**: Every static resource is referenced with our own cache busting system. This means you can use extremely aggressive caching for performance on static files yet they immediately invalidate upon changes
@@ -41,8 +41,36 @@ Answer the cookiecutter prompts (notice how smart defaults are suggested anywher
 
 *[Note: Once you have run cookiecutter with the full URL, it is cached locally and can be run with just the template name.]*
 
+You will need to install Cookiecutter first:
+
+```
+pip3 install --user cookiecutter
+```
+
+(Use pip command for Python 3 on Windows)
+
 ## Compare to Pyramid's standard templates
 
 The Pyramid web framework offers a handful of nice starter templates. They have recently moved to [Cookiecutter](https://cookiecutter.readthedocs.io) as the primary way to [scaffold new Pyramid web applications](http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/project.html#pyramid-cookiecutters).
+
+There are a few existing templates but they are built to be bare bones and less opinionated so they are broadly applicable. They are:
+
+`pyramid-cookiecutter-starter`
+
+URL dispatch for routing and either Jinja2, Chameleon, or Mako for templating
+
+`pyramid-cookiecutter-alchemy`
+
+SQLite for persistent storage, SQLAlchemy for an ORM, URL dispatch for routing, and Jinja2 for templating.
+
+`pyramid-cookiecutter-zodb`
+
+ZODB for persistent storage, traversal for routing, and Chameleon for templating
+
+Pyramid cookiecutters released under the Pylons Project differ from each other on a number of axes:
+
+* the persistence mechanism they offer (no persistence mechanism, SQLAlchemy with SQLite, or ZODB)
+* the mechanism they use to map URLs to code (URL dispatch or traversal)
+* templating libraries (Jinja2, Chameleon, or Mako)
 
 ## Feature survey

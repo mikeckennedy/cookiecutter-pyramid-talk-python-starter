@@ -74,3 +74,9 @@ Pyramid cookiecutters released under the Pylons Project differ from each other o
 * templating libraries (Jinja2, Chameleon, or Mako)
 
 ## Feature survey
+
+TBD
+
+## Want to go deeper? Take the course
+
+![]()

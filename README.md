@@ -79,7 +79,7 @@ TBD
 
 ## Want to go deeper? Take the course
 
-[![](https://raw.githubusercontent.com/mikeckennedy/cookiecutter-pyramid-talk-python-starter/master/readme_resources/python-for-entrepreneurs-b.png)](https://training.talkpython.fm/courses/explore_entrepreneurs/python-for-entrepreneurs-build-and-launch-your-online-business)
+[![](https://raw.githubusercontent.com/mikeckennedy/cookiecutter-pyramid-talk-python-starter/master/readme_resources/python-for-entrepreneurs-c.png)](https://training.talkpython.fm/courses/explore_entrepreneurs/python-for-entrepreneurs-build-and-launch-your-online-business)
 
 If this web app is interesting to you and you'd like to dig way deeper into all of these topics, we have a 20-hour online course that goes into detail in each area of the app and more.
 

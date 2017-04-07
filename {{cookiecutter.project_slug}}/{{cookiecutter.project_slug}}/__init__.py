@@ -8,9 +8,11 @@ import {{cookiecutter.project_slug}}
 import {{cookiecutter.project_slug}}.controllers.home_controller as home
 import {{cookiecutter.project_slug}}.controllers.account_controller as account
 import {{cookiecutter.project_slug}}.controllers.newsletter_controller as news
+import {{cookiecutter.project_slug}}.controllers.cms_controller as cms
 from {{cookiecutter.project_slug}}.data.dbsession import DbSessionFactory
 from {{cookiecutter.project_slug}}.email.template_paser import EmailTemplateParser
 from {{cookiecutter.project_slug}}.services.email_service import EmailService
+from {{cookiecutter.project_slug}}.services.cms_service import CmsService
 from {{cookiecutter.project_slug}}.services.log_service import LogService
 from {{cookiecutter.project_slug}}.services.mailinglist_service import MailingListService
 
@@ -80,6 +82,8 @@ def init_db(_):
     db_file = os.path.join(top_folder, rel_file)
     DbSessionFactory.global_init(db_file)
 
+    CmsService.init_test_data()
+
 
 def init_mode(config):
     global dev_mode
@@ -112,6 +116,10 @@ def init_routing(config):
     add_controller_routes(config, home.HomeController, 'home')
     add_controller_routes(config, account.AccountController, 'account')
     add_controller_routes(config, news.NewsletterController, 'newsletter')
+
+    # Add a CMS 'catch-all' route. See CmsController / CmsService for more info.
+    # This entry must go at the very end of all routes
+    config.add_handler('cms_route', '/*sub_path', handler=cms.CMSController, action='page')
 
     config.scan()
 

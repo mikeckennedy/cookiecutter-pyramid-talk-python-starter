@@ -5,6 +5,8 @@ from {{cookiecutter.project_slug}}.data.modelbase import SqlAlchemyBase
 import {{cookiecutter.project_slug}}.data.account
 # noinspection PyUnresolvedReferences
 import {{cookiecutter.project_slug}}.data.passwordreset
+# noinspection PyUnresolvedReferences
+import {{cookiecutter.project_slug}}.data.cms_page
 
 
 class DbSessionFactory:

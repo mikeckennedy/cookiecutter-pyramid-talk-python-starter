@@ -68,6 +68,9 @@
                 <li>
                     <a href="/home/contact">contact</a>
                 </li>
+                <li>
+                    <a href="/landing_pages/a_dynamic_cms_page">cms page</a>
+                </li>
                 <li tal:condition="not view.logged_in_user_id">
                     <a href="/account/signin">sign in</a>
                 </li>

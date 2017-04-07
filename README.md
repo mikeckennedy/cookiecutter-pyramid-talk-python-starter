@@ -15,6 +15,7 @@ An opinionated **_Cookiecutter_** template for creating Pyramid web applications
 * **Outbound email with templates**: The app has a set of static HTML files with placeholders that are loaded by the outbound email system and populated with user data
 * **Bower static resource management**: Most templates are based on out-of-date files (css templates, js, etc.). This template is uses [bower](https://bower.io/) for it's static files. This means a single CLI command will get you the latest everything.
 * **Fast pages that are never stale**: Every static resource is referenced with our own cache busting system. This means you can use extremely aggressive caching for performance on static files yet they immediately invalidate upon changes
+* **Built-in CMS**: The site supports loading landing pages and other static content from the database while still supporting the common look and feel.
 * **Comes with an entire online course**: This template is built from the final project in [Python for Entrepreneurs](https://training.talkpython.fm/courses/explore_entrepreneurs/python-for-entrepreneurs-build-and-launch-your-online-business), a 20 hour course on building professional web apps in Python and Pyramid from [Talk Python Training](https://training.talkpython.fm/)
 
 ## What you get

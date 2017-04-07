@@ -16,11 +16,11 @@ requires = [
     'passlib',
     'pyramid',
     'pyramid_chameleon',
-    'pyramid_debugtoolbar',
+    # 'pyramid_debugtoolbar', # installed via pip3 install -r requirements-dev.txt
     'pyramid_handlers',
     'rollbar',
     'sqlalchemy',
-    'waitress',
+    # 'waitress', # installed via pip3 install -r requirements-dev.txt
 ]
 
 tests_require = [
@@ -31,7 +31,7 @@ tests_require = [
 
 setup(name='{{cookiecutter.project_slug}}',
       version='0.0',
-      description='{{cookiecutter.project_name}}',
+      description='Site with CMS',
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
           "Programming Language :: Python",
@@ -39,8 +39,8 @@ setup(name='{{cookiecutter.project_slug}}',
           "Topic :: Internet :: WWW/HTTP",
           "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
       ],
-      author='{{cookiecutter.contact_name}}',
-      author_email='{{cookiecutter.contact_email}}',
+      author='Talk Python',
+      author_email='contact@talkpython.fm',
       url='',
       keywords='web pyramid pylons',
       packages=find_packages(),
@@ -55,3 +55,13 @@ setup(name='{{cookiecutter.project_slug}}',
       main = {{cookiecutter.project_slug}}:main
       """,
       )
+
+print()
+print()
+print('**************************************************************')
+print('*')
+print("*        Be sure to run 'pip3 install -r requirements-dev.txt'")
+print("*        if this is your dev install. Otherwise the dev server")
+print("*        and debug toolbar will be absent.")
+print('*')
+print('**************************************************************')

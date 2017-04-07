@@ -1,0 +1,32 @@
+######################################
+# primary dependencies
+#
+#
+html2text
+logbook
+mailchimp
+mailer
+passlib
+pyramid
+pyramid_chameleon
+pyramid_handlers
+rollbar
+sqlalchemy
+
+
+######################################
+# secondary dependencies
+#
+#
+Chameleon
+PasteDeploy
+WebOb
+docopt==0.4.0
+hupper
+repoze.lru
+requests
+six
+translationstring
+venusian
+zope.deprecation
+zope.interface

@@ -3,12 +3,13 @@ import logbook
 import {{cookiecutter.project_slug}}.infrastructure.static_cache as static_cache
 import pyramid.httpexceptions as exc
 
-from {{cookiecutter.project_slug}}.infrastructure.supressor import suppress
 import {{cookiecutter.project_slug}}.infrastructure.cookie_auth as cookie_auth
 from {{cookiecutter.project_slug}}.services.account_service import AccountService
 
 
 class BaseController:
+    __autoexpose__ = None
+
     def __init__(self, request):
         self.request = request
         self.build_cache_id = static_cache.build_cache_id
@@ -21,7 +22,6 @@ class BaseController:
         return cookie_auth.get_user_id_via_auth_cookie(self.request) is not None
 
     # noinspection PyMethodMayBeStatic
-    @suppress()
     def redirect(self, to_url, permanent=False):
         if permanent:
             raise exc.HTTPMovedPermanently(to_url)

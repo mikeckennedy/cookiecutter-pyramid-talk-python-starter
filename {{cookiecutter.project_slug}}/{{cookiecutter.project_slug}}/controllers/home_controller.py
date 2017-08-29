@@ -1,6 +1,5 @@
 import pyramid_handlers
 from {{cookiecutter.project_slug}}.controllers.base_controller import BaseController
-from {{cookiecutter.project_slug}}.infrastructure.supressor import suppress
 
 
 class HomeController(BaseController):
@@ -29,10 +28,6 @@ class HomeController(BaseController):
     @pyramid_handlers.action(renderer='templates/home/image_credits.pt')
     def image_credits(self):
         return {}
-
-    @suppress()
-    def dont_expose_as_web_action(self):
-        print("Called dont_expose_as_web_action, what happened?")
 
     def alternate_row_style(self):
         alt = self.alternate_mode

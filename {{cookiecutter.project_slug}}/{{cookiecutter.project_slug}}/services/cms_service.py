@@ -14,6 +14,8 @@ class CmsService:
         page = session.query(CmsPage) \
             .filter(CmsPage.url == url) \
             .first()
+            
+        session.close()
 
         return page
 

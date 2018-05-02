@@ -74,10 +74,6 @@ Pyramid cookiecutters released under the Pylons Project differ from each other o
 * the mechanism they use to map URLs to code (URL dispatch or traversal)
 * templating libraries (Jinja2, Chameleon, or Mako)
 
-## Feature survey
-
-TBD
-
 ## Want to go deeper? Take the course
 
 [![](https://raw.githubusercontent.com/mikeckennedy/cookiecutter-pyramid-talk-python-starter/master/readme_resources/course.png)](https://training.talkpython.fm/courses/explore_entrepreneurs/python-for-entrepreneurs-build-and-launch-your-online-business)
